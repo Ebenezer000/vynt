@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Eristoria', sans-serif;
+}
+@font-face {
+  font-family: 'Eristoria';
+  src: url('/src/assets/erstoria-font/erstoria.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
