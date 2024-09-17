@@ -4,9 +4,6 @@ interface ButtonProps {
     active: boolean;
   }
 
-interface SlideProps {
-    active: boolean;
-}
 
 export const MainContainer = styled.main`
     width:100%;
