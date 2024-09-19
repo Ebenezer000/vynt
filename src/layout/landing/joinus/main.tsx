@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Container, MainContainer, Button } from "./style"
 import vec from "../../../assets/div.framer-amyu2d.svg";
 import vec1 from "../../../assets/game.svg"
@@ -6,8 +6,20 @@ import vec2 from '../../../assets/Group 20.svg'
 import vec3 from '../../../assets/Group 22.svg'
 import vec4 from "../../../assets/Rectangle 3.svg"
 import vec5 from "../../../assets/Group 26.svg"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function JoinUs() {
+    useEffect(() => {
+        Aos.init({
+           offset: 120,
+           easing: "ease",
+           duration: 500,
+           once: true,
+           mirror: false,
+           anchorPlacement: "top-bottom",
+        });
+     }, []);
     const [selectedOption, setSelectedOption] = useState('selling');
     const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -27,11 +39,10 @@ function JoinUs() {
 
     return(
         <MainContainer>
-            <Container>
+            <Container data-aos="fade-up" data-aos-delay="300">
                 <div>
                     <h1>Join a Community of Thrift lovers ❤️ Bargain hunters</h1>
-                    <p>Whether you're a solo designer or part of a team, a junior or a senior, 
-                    at an agency or a large organization, Prime has you covered. </p>
+                    <p>Whether you want to discover new and thrifted fashion at affordable prices,declutter your wardrobe,give your clothes a second life and earn some money or if you are thrift retailer looking to reach a community of thrift loves .Vynt is for you </p>
                     <p>It’s not about number of components. With <span>top Figma tricks & 
                     techniques, battle-tested design system approach,</span> Prime 
                     supercharges your skills, and empowers you to work at warp speed. </p>

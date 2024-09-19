@@ -10,7 +10,7 @@ export const MainContainer = styled.main`
     height:auto;
     display:flex;
     justify-content:center;
-    // border:1px solid #000;
+    background:#F5F5F5;
 `
 export const Container = styled.div`
     text-align:center;

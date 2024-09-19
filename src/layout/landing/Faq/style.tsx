@@ -6,7 +6,9 @@ export const MainContainer = styled.main`
     display:flex;
     justify-content:center;
     padding-bottom:5%;
-    // border:1px solid #000;
+    background:#F5F5F5;
+
+
 `
 export const Container = styled.div`
     text-align:center;
@@ -60,7 +62,7 @@ export const Container = styled.div`
     }
         .question{
             border-radius:9px;
-            background:#fff;
+            background:#f5f5f5;
             // border:1px solid #6B7280;
             display:flex;
             justify-content:space-between;

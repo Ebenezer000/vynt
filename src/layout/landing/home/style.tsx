@@ -2,20 +2,23 @@ import styled from "styled-components";
 import vec from '../../../assets/Group 24.svg'
 import vec1 from '../../../assets/Frame 203.svg'
 import vec2 from "../../../assets/mobilephone.svg";
+import vec3 from "../../../assets/Pattern.svg";
 
 
 
 export const MainContainer = styled.main`
     width:100%;
     height:140vh;
-    background:url(${vec}),#52014F;
+    background:url(${vec3}),url(${vec}),#52014F;
+    // background-image:url;
+    background-repeat:no-repeat;
     display:flex;
     justify-content:center;
 //   font-family: 'Astoria', sans-serif;
 
 
     @media(max-width:600px){
-        background:url(${vec1}),#52014F;
+        background:url(${vec1}),url(${vec3}),#52014F;
         background-repeat:no-repeat;
         height:auto;
     }

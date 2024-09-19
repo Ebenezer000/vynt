@@ -1,41 +1,58 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Container, MainContainer } from "./style"
 import Vec from "../../../assets/Addition.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Faq() {
+    useEffect(() => {
+        Aos.init({
+           offset: 120,
+           easing: "ease",
+           duration: 500,
+           once: true,
+           mirror: false,
+           anchorPlacement: "top-bottom",
+        });
+     }, []);
     const [openIndex, setOpenIndex] = useState(null)
     const toogle = (index) => {
         setOpenIndex(openIndex === index ? null : index)
     }
     const faqData = [
         {
-            question: 'What are the recent updates and enhancements in AlignUI?',
-            answer: 'Udaralinks specializes in providing a wide range of financial services including money transfers, foreign exchange, virtual currency, and payment services.'
+            question: ' So, what exactly is Vynt?',
+            answer: "Great question! Vynt is Africa's premier thrift fashion marketplace, where you can score amazing second-händ fashion finds, from unique thrifted pieces to trendy accessories.Think of it as the ultimate digital treasure hunt for sustainable fashion lovers."
         },
         {
-            question: 'QWhat are the recent updates and enhancements in AlignUI?',
-            answer: 'Yes, Udaralinks is a licensed Money Services Business (MSB) in British Columbia, Canada. We operate under the regulatory guidelines and ensure compliance to provide safe and secure financial solutions to our clients.'
+            question: 'How does Vynt work?',
+            answer: "Super easy! Sellers list their pre-loved (or brand new!) fashion items, and buyers browse, shop, and get these gems delivered to their door. It's a win-win - less waste, more style! Just download the app, and let the thrifting adventure begin!"
         },
         {
-            question: 'What are the recent updates and enhancements in AlignUI?',
-            answer: 'To transfer money, simply create an account on the Udaralinks website or mobile app. Once registered, you can initiate a transfer by providing the necessary details such as the recipient"s information and the desired amount. Our platform will guide you through the process step-by-step.'
+            question: 'When can I start shopping on Vynt?',
+            answer: "Hold tight! We're putting the final touches on your dream thrifting experience. Sign up for our waitlist, and you'll be the FIRST to know when we launch. You won't want to miss it!"
         },
         {
-            question: 'What are the recent updates and enhancements in AlignUI?',
-            answer: 'The duration of a money transfer depends on various factors such as the destination country, the selected transfer method, and any additional security measures. However, we strive to ensure the fastest possible processing times and provide an estimated delivery time for each transfer.'
+            question: 'Why should I thrift on Vynt instead of buying new?',
+            answer: "Glad you asked! Thrifting on Vynt is not only kinder on your wallet, but also kinder on the planet. By shopping second-hand, you're reducing fashion waste, supporting a circular Activate Wideconomy, and getting one-of-a-kind pieces that you won't find in regular stores."
         },
         {
-            question: 'What are the recent updates and enhancements in AlignUI?',
-            answer: 'Absolutely. We prioritize the security and privacy of our users" information. Our platform utilizes encryption protocols and robust security measures to safeguard your personal and financial data.'
+            question: 'How do I sign up for the waitlist?',
+            answer: "Easy! Just drop your email in the sign-up box above, and you're all set! You'll be the first to know when we launch, and we might even throw in some exclusive goodies for early birds."
         },
         {
-            question: 'Can I use AlignUI Design System for commercial projects?',
-            answer: 'Yes, you can easily track the status of your money transfer by logging into your Udaralinks account. Our system provides real-time updates on the progress of your transaction.'
+            question: 'What can I sell on Vynt?',
+            answer: "You can sell pre-loved (or even brand new!) clothing, shoes, accessories, and all things fashion. Got a vintage jacket, trendy sneakers, or a quirky hat that needs a new home? Vynt's the place to list it!"
+        },
+        {
+            question: 'Do I have to sell only second-hand stuff?',
+            answer: "Nope! While we're all about sustainability, we also love a good brand-new piece. So if you've got tags-still-on items or clothes you bought but never wore (we've all been there ©), go ahead and list them. As long as it's fashion-related, you can sell it!"
         }
+         
     ]
     return(
         <MainContainer>
-            <Container>
+            <Container data-aos="fade-up" data-aos-delay="200">
                 <div>
                     <h1>Frequently Asked Questions</h1>
                     <p>Find questions and answers related to the design system, purchase, updates, and support.</p>
