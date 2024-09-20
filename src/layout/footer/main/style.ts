@@ -1,14 +1,26 @@
 import styled from "styled-components";
+import vec from '../../../assets/Group 24.svg'
+import vec1 from '../../../assets/Frame 203.svg'
+import vec2 from "../../../assets/mobilephone.svg";
+import vec3 from "../../../assets/Pattern.svg";
 
 export const MainContainer = styled.main`
     width:100%;
     height:auto;
+    background:url(${vec3}),#52014F;
+    // background-image:url;
+    background-repeat:no-repeat;
     display:flex;
     justify-content:center;
-    // border:1px solid #000;
-    background:#52014F;
     padding-bottom:5%;
+
+    @media(max-width:600px){
+        background:url(${vec3}),#52014F;
+        background-repeat:no-repeat;
+        height:auto;
+    }
 `
+
 export const Container = styled.div`
     // text-align:center;
     width:50%;

@@ -17,6 +17,13 @@ function Hero() {
            anchorPlacement: "top-bottom",
         });
      }, []);
+
+    const scrollToBottom = () => {
+    window.scrollTo({
+        top: document.documentElement.scrollHeight, // Scroll to the bottom
+        behavior: "smooth", // Smooth scroll
+    });
+    };
     return(
         <MainContainer>
             <Container>
@@ -24,7 +31,7 @@ function Hero() {
                     <h1>Buy and sell new and thrifted clothes,shoes and accessories</h1>
                     <p>Declutter your wardrobe and discover new and preloved pieces at affordable prices.</p>
                     <div className="div_container">
-                        <button><span>Join Waitlist</span><img src={vec} alt="" /></button>
+                        <button onClick={scrollToBottom}><span>Join Waitlist</span><img src={vec} alt="" /></button>
                     </div>
                 </div>
                 <div >
