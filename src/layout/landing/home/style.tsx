@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import vec from '../../../assets/Group 24.svg'
 import vec1 from '../../../assets/Frame 203.svg'
-import vec2 from "../../../assets/mobilephone.svg";
 import vec3 from "../../../assets/Pattern.svg";
 
 

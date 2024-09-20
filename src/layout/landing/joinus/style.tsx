@@ -120,8 +120,9 @@ export const Container = styled.div`
         // border:1px solid #000;
         display:flex;
         justify-content:space-between;
+
         @media(max-width:600px){
-        display:none;
+            display:none;
         }
 
         button{
@@ -129,6 +130,12 @@ export const Container = styled.div`
             background:transparent;
             font-size:1.2rem;
             cursor:pointer;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ensures button takes full width of the container */
+            padding: 10px; /* Adjust padding to center text vertically */
         }
     }
     .slide_contain{
@@ -184,7 +191,9 @@ export const Button = styled.button<ButtonProps>`
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
-
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: ${(props) => (props.active ? '#45a049' : '#ddd')};
   }
