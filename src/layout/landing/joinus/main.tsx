@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Container, MainContainer, Button } from "./style"
+import { Container, MainContainer, Button, Slider } from "./style"
 import vec from "../../../assets/div.framer-amyu2d.svg";
 import vec1 from "../../../assets/game.svg"
 import vec2 from '../../../assets/Group 20.svg'
@@ -20,8 +20,14 @@ function JoinUs() {
            anchorPlacement: "top-bottom",
         });
      }, []);
-    const [selectedOption, setSelectedOption] = useState('selling');
+    const [selectedOption, setSelectedOption] = useState(true);
+    const [selectedOptionName, setSelectedOptionName] = useState('selling');
     const [imageLoaded, setImageLoaded] = useState(false);
+
+    function setOption(option: string, state: boolean) {
+        setSelectedOption(state)
+        setSelectedOptionName(option)
+    }
 
     const images = {
         selling: vec2,
@@ -32,10 +38,10 @@ function JoinUs() {
         buying: vec5,
       };
 
-      const handleImageChange = (option) => {
-        setImageLoaded(false); // Reset image loaded state before new image
-        setSelectedOption(option);
-      };
+    const handleImageChange = (option) => {
+    setImageLoaded(false); // Reset image loaded state before new image
+    setSelectedOption(option);
+    };
 
     return(
         <MainContainer>
@@ -58,32 +64,35 @@ function JoinUs() {
                     <h1>Seamlessly Switch Between Buying or Selling</h1>
                     <div className="slider_container">
                         <div className="slider_settings">
-                            <Button active={selectedOption === 'selling'} onClick={() => setSelectedOption('selling')}>
+                            <Button active={selectedOptionName === 'selling'} onClick={() => setOption('selling', true)}>
                                 Selling
                             </Button>
-                            <Button active={selectedOption === 'buying'} onClick={() => setSelectedOption('buying')}>
+                            <Button active={!selectedOption} onClick={() => setOption('buying', false)}>
                                 Buying
                             </Button>
                         </div>   
                         <div className="slider_settings_image">
-                            <Button active={selectedOption === 'selling'} onClick={() => setSelectedOption('selling')}>
+                            <Button active={selectedOption} onClick={() => setOption('selling', true)}>
                                 Selling
                             </Button>
-                            <Button active={selectedOption === 'buying'} onClick={() => setSelectedOption('buying')}>
+                            <Button active={!selectedOption} onClick={() => setOption('buying', false)}>
                                 Buying
                             </Button>
                         </div>   
                     </div>
-                    <div className="slide_contain">
-                        <div className="main_slider_container">
-                            <div className="active_slider"></div>
+                    <Slider active={selectedOption}>
+                        <div className="slide_contain">
+                            <div className="main_slider_container">
+                                <div className="active_slider"></div>
+                            </div>
                         </div>
-                    </div>
+                    </Slider>
+                    
                     <div>
 
                     </div>
-                    <img className="seamless_image" src={images[selectedOption]} alt="" />
-                    <img className="seamless_image_mobile" src={mobileImages[selectedOption]} alt="" />     
+                    <img className="seamless_image" src={images[selectedOptionName]} alt="" />
+                    <img className="seamless_image_mobile" src={mobileImages[selectedOptionName]} alt="" />     
                 </div>
             </Container>
         </MainContainer>

@@ -10,7 +10,7 @@ export const MainContainer = styled.main`
     height:auto;
     display:flex;
     justify-content:center;
-    background:#F5F5F5;
+    // border:1px solid #000;
 `
 export const Container = styled.div`
     text-align:center;
@@ -187,5 +187,37 @@ export const Button = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${(props) => (props.active ? '#45a049' : '#ddd')};
+  }
+`;
+
+export const Slider = styled.div<ButtonProps>`
+  .slide_contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+  }
+  
+  .main_slider_container {
+    border: 1px solid transparent;
+    background: #f5f5f5;
+    width: 35%;
+    height: 4px;  /* Adjusted for better slider view */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .active_slider {
+    width: 50%;
+    background: #52014F;
+    height: 2px;
+    border-radius: 20px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out; /* Transition for smooth sliding */
+    
+    /* Move to left (active) or right (inactive) */
+    transform: ${(props) => (props.active ? 'translateX(0)' : 'translateX(100%)')};
   }
 `;

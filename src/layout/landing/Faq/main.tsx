@@ -9,7 +9,7 @@ function Faq() {
         Aos.init({
            offset: 120,
            easing: "ease",
-           duration: 500,
+           duration: 2000,
            once: true,
            mirror: false,
            anchorPlacement: "top-bottom",
