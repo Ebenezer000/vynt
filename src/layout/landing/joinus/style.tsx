@@ -168,6 +168,7 @@ export const Container = styled.div`
         justify-content:space-between;
         @media(max-width:600px){
         width:50%;
+        display:flex;
         }
 
         button{
