@@ -6,10 +6,10 @@ export const MainContainer = styled.main`
     height:auto;
     background:url(${vec3})#52014F;
     padding:2%;
-
+    
     @media(max-width:600px){
-        // border:1px solid red;
         padding-right:5%;
+        padding-top:5%;
     }
 `
 export const Container = styled.div`
@@ -27,7 +27,10 @@ export const Container = styled.div`
         align-items:center;
         gap:10px;
         @media(max-width:600px){
-            width:30%;
+            width:25%;
+            height:25px;
+            border-radius:8px;
+            font-size: 11px
         }
     }
     

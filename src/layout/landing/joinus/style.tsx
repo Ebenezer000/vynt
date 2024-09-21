@@ -6,58 +6,73 @@ interface ButtonProps {
 
 
 export const MainContainer = styled.main`
+    padding-top: 25px;
     width:100%;
-    height:auto;
     display:flex;
     justify-content:center;
+    align-items:center;
     // border:1px solid #000;
 `
 export const Container = styled.div`
     text-align:center;
-    width:35%;
-    // border:1px solid #fff;
     padding-top:5%;
     gap:20px;
-    display:grid;
+    width: 40%;
     justify-content:center;
+    align-items: center;
     @media(max-width:600px){
-        width:80%;
-        // border:1px solid red;
-        // place-content:center;
-        // display:none;
+        width:70%;
+        text-align: center;
     }
     h1{
         color:#52014F;
         width:100%;
-        font-size:3rem;
+        font-size:2.5rem;
         @media(max-width:600px){
-        font-size:2.0rem;
+            font-size:1.4rem;
+            margin-bottom: 10px;
         }
     }
     h2{
         color:#52014F;
         width:100%;
-        font-size:2.5rem;
+        font-size:2rem;
         @media(max-width:600px){
-        font-size:2.0rem;
+            font-size:1rem;
         }
     }
     .features_container{
         display:flex;
         justify-content:center;
-        // border:1px solid red;
+        margin-bottom: 20px;
         gap:8px;
+        @media(max-width:600px){
+            margin-bottom: 10px;
+        }
     }
     h3{
         color:#FC811C;
+        font-size: 1.1rem;
+        @media(max-width:600px){
+            font-size:1rem;
+        }
     }
     p{
+        padding: 20px;
+        width: 90%;
         color:#83939C;
-        width:100%;
-        font-size:1.2rem;
+        font-size:1rem;
         margin-top:2%;
-        font-weight:0;
         line-height:1.5;
+        text-align: center;
+        @media(max-width:600px){
+            color:#83939C;
+            font-size:0.8rem;
+            margin-top:2%;
+            line-height:1.5;
+            text-align: center;
+        }
+
     }
     span{
         color:#52014F;
@@ -69,20 +84,23 @@ export const Container = styled.div`
         padding-top:2%;
     }
     .joinus_image{
+        margin-top:30px;
+        margin-bottom:50px;
         @media(max-width:600px){
-        width:90%;
-        // place-content:center;
-        display:none;
+            width:90%;
+            // place-content:center;
+            display:none;
         }
     }
     .joinus_image_mobile{
         display:none;
         @media(max-width:600px){
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-        // place-content:center;
-        display:block;
+            width:90%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            display:block;
         }
     }
     .seamless_image{
@@ -108,7 +126,7 @@ export const Container = styled.div`
         
     }
     .slider_container{
-        display:flex;
+        display:grid;
         justify-content:center;
         align-items:center;
         // border:1px solid red;
@@ -116,7 +134,7 @@ export const Container = styled.div`
         padding-bottom:2%;  
     }
     .slider_settings{
-        width:20%;
+        width:60%;
         // border:1px solid #000;
         display:flex;
         justify-content:space-between;
@@ -161,14 +179,11 @@ export const Container = styled.div`
         border-radius:20px;
     }
     .slider_settings_image{
-        width:20%;
         display:none;
-        // border:1px solid #000;
-        // display:flex;
-        justify-content:space-between;
         @media(max-width:600px){
-        width:50%;
-        display:flex;
+            width:100%;
+            display:flex;
+
         }
 
         button{
@@ -183,6 +198,7 @@ export const Container = styled.div`
     }
 
 `
+
 export const Button = styled.button<ButtonProps>`
   background-color: ${(props) => (props.active ? '#4CAF50' : '#f1f1f1')};
   color: #52014F;
@@ -206,6 +222,10 @@ export const Slider = styled.div<ButtonProps>`
     display: flex;
     justify-content: center;
     padding-bottom: 4%;
+    @media(max-width:600px){
+            width:100%;
+            display:flex;
+    }
   }
   
   .main_slider_container {
@@ -217,6 +237,10 @@ export const Slider = styled.div<ButtonProps>`
     display: flex;
     justify-content: center;
     position: relative;
+    @media(max-width:600px){
+        width:100%;
+        display:flex;
+    }
   }
   
   .active_slider {
@@ -231,3 +255,19 @@ export const Slider = styled.div<ButtonProps>`
     transform: ${(props) => (props.active ? 'translateX(0)' : 'translateX(100%)')};
   }
 `;
+
+export const Slides = styled.div`
+    text-align:center;
+    padding-top:5%;
+    gap:20px;
+    width: 100%;
+    display:grid;
+    justify-content:center;
+    align-items: center;
+    margin-bottom:20px;
+    @media(max-width:600px){
+        display:grid;
+        text-align: center;
+    }
+
+`

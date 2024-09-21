@@ -27,7 +27,7 @@ function Testimonials() {
                 </div>
                 <div>
                     <h1>
-                        Don’t just take our word for it. Here is what the community has to say
+                        DON’T JUST TAKE OUR WORD FOR IT. HERE IS WHAT THE COMMUNITY HAS TO SAY
                     </h1>
                 </div>
                 <div>

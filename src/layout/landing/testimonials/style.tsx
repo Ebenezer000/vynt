@@ -19,31 +19,31 @@ export const Container = styled.div`
     padding-right:5%;
     @media(max-width:600px){
         width:80%;
-        // border:1px solid red;
-        // place-content:center;
-        // display:none;
+        padding: 10px;
         margin-top:10%;
     }
 
     h1{
         color:#52014F;
         width:70%;
-        font-size:3rem;
+        font-size:2.5rem;
         
         @media(max-width:600px){
-            font-size:2rem;
-        
+            font-size:1.1rem;
+            width: 95%;
         }
     }
     .testimonials_container{
         display:flex;
-        // justify-content:center;
         align-items:center;
-        // border:1px solid red;
         gap:8px;
     }
     h3{
         color:#FC811C;
+        @media(max-width:600px){
+            font-size:0.7rem;
+        
+        }
     }
     p{
         color:#83939C;
@@ -56,18 +56,19 @@ export const Container = styled.div`
     .testimonial_image{
         @media(max-width:600px){
         width:90%;
-        // place-content:center;
         display:none;
         }
     }
     .testimonial_image_mobile{
         display:none;
         @media(max-width:600px){
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-        // place-content:center;
-        display:block;
+            width:90%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+
         }
     }
     .testimonial_content{
@@ -85,7 +86,6 @@ export const Container = styled.div`
         padding-right:2%;
         padding-top:2%;
         padding-bottom:2%;
-        width:${props => props.width || '100%'}
         align-items:center;
         .name_header{
             font-size:20px;
@@ -110,9 +110,6 @@ export const Reviews = styled.div`
         padding-right:2%;
         padding-top:2%;
         padding-bottom:2%;
-        height:${props => props.height || '100vh'};
-        width:${props => props.width || '100%'};
-        // margin-top:${props => props.marginTop || '100%'};
         align-items:center;
         .name_header{
             font-size:20px;

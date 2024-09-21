@@ -23,7 +23,7 @@ export const MainContainer = styled.main`
 
 export const Container = styled.div`
     // text-align:center;
-    width:50%;
+    width:55%;
     // border:1px solid #fff;
     padding-top:5%;
     gap:20px;
@@ -72,14 +72,16 @@ export const Container = styled.div`
     .footer_left{
         display:flex;
         flex-direction:column;
-        width:50%;
+        width:70%;
+        margin-top: 13%;
+        margin-right: 30px;
 
         @media(max-width:600px){
-        width:100%;
-        // border:1px solid red;
-        flex-direction:column;
-        // place-content:center;
-        // display:none;
+            width:100%;
+            // border:1px solid red;
+            flex-direction:column;
+            // place-content:center;
+            // display:none;
         }
 
         .form_container{
@@ -152,6 +154,13 @@ export const Container = styled.div`
             display:flex;
             gap:30px;
             margin-top:3%;
+            @media(max-width:600px){
+                margin-left: 15px;
+            }
+        }
+        @media(max-width:600px){
+            width:auto;
+            margin-left: -15px;
         }
     }
     .footer_left_down_mobile{
