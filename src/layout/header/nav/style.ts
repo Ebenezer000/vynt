@@ -20,6 +20,7 @@ export const Container = styled.div`
         border:none;
         background:#F9B205;
         cursor:pointer;
+        color: #000;
         width:14%;
         height:5vh;
         display:flex;
