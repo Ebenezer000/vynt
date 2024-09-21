@@ -70,7 +70,7 @@ export const Container = styled.div`
         display:flex;
         flex-direction:column;
         width:70%;
-        margin-top: 13%;
+        margin-top: 3%;
         margin-right: 30px;
 
         @media(max-width:600px){
@@ -151,6 +151,7 @@ export const Container = styled.div`
             display:flex;
             gap:30px;
             margin-top:3%;
+            display:none;
             @media(max-width:600px){
                 margin-left: 15px;
             }
@@ -158,6 +159,7 @@ export const Container = styled.div`
         @media(max-width:600px){
             width:auto;
             margin-left: -15px;
+            display:none;
         }
     }
     .footer_left_down_mobile{

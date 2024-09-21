@@ -50,10 +50,7 @@ function JoinUs() {
                 <div>
                     <h1>Join  Community Of Thrift Lovers ❤️ Bargain Hunters</h1>
                     <div className="header_text">
-                        <p>Whether you want to discover new and thrifted fashion at affordable prices,declutter your wardrobe,give your clothes a second life and earn some money or if you are thrift retailer looking to reach a community of thrift loves .Vynt is for you </p>
-                        <p>It’s not about number of components. With <span>top Figma tricks & 
-                        techniques, battle-tested design system approach,</span> Prime 
-                        supercharges your skills, and empowers you to work at warp speed. </p>
+                        <p>Whether you want to discover new and thrifted fashion at affordable prices,declutter your wardrobe, <span> give your clothes a second life and earn some money</span> or if you are thrift retailer looking to reach a community of thrift loves .Vynt is for you </p>
                     </div>
                 </div>
                 <div>
