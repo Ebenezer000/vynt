@@ -29,7 +29,7 @@ export const Container = styled.div`
         width:100%;
         font-size:2.5rem;
         @media(max-width:600px){
-            font-size:1.4rem;
+            font-size:1.5rem;
             margin-bottom: 10px;
         }
     }
@@ -67,7 +67,7 @@ export const Container = styled.div`
         text-align: center;
         @media(max-width:600px){
             color:#83939C;
-            font-size:0.8rem;
+            font-size:0.9rem;
             margin-top:2%;
             line-height:1.5;
             text-align: center;

@@ -44,7 +44,7 @@ export const Container = styled.div`
         font-size:3rem;
         @media(max-width:600px){
             bacground-repeat:no-repeat;
-            font-size:1.2rem;
+            font-size:1.4rem;
             width:100%;
             font-weight: 150;
             margin-top: 15px;
@@ -63,7 +63,7 @@ export const Container = styled.div`
             text-align:center;
             justify-content:center;
             width:100%;
-            font-size:10px;
+            font-size:15px;
             margin-top:4%;
             margin-bottom:13%;
         }

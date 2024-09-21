@@ -33,12 +33,13 @@ export const Container = styled.div`
     line-height: 1.5;
 
     @media (max-width: 600px) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
   .qa_container {
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .question {
@@ -49,6 +50,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 3%;
     cursor: pointer;
+    font-size: 25px;
 
     h2 {
       color: #4b5563;
@@ -56,7 +58,7 @@ export const Container = styled.div`
       text-align: start;
 
       @media (max-width: 600px) {
-        font-size: 15px;
+        font-size: 16px;
       }
     }
 
@@ -105,7 +107,7 @@ export const Container = styled.div`
       text-align: left;  // Aligns the answer text to the left
 
       @media (max-width: 600px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
     }
   }
