@@ -3,10 +3,10 @@ import { Container, MainContainer, Button, Slider, Slides } from "./style"
 import vec from "../../../assets/div.framer-amyu2d.svg";
 import vec0 from "../../../assets/joinus_image.svg"
 import vec1 from "../../../assets/game.svg"
-import vec2 from '../../../assets/Group 20.svg'
-import vec3 from '../../../assets/Group 22.svg'
-import vec4 from "../../../assets/Rectangle 3.svg"
-import vec5 from "../../../assets/Group 26.svg"
+import vec2 from '../../../assets/Group_20.svg'
+import vec3 from '../../../assets/Group_22.svg'
+import vec4 from "../../../assets/Rectangle_3.svg"
+import vec5 from "../../../assets/Group_26.svg"
 import Aos from "aos";
 import "aos/dist/aos.css";
 

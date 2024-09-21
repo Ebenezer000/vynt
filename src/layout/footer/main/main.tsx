@@ -3,9 +3,9 @@ import { Container, MainContainer } from "./style";
 import vec from "../../../assets/arrow-right-02.svg";
 import vec1 from "../../../assets/call.svg";
 import vec2 from "../../../assets/mail.svg";
-import vec3 from '../../../assets/iPhone 15 Pro Portrait Mockup.svg'
-import vec4 from "../../../assets/App Store Black.svg"
-import vec5 from "../../../assets/Google PLay Black.svg"
+import vec3 from '../../../assets/iPhone_15_Pro_Portrait_Mockup.svg'
+import vec4 from "../../../assets/App_Store_Black.svg"
+import vec5 from "../../../assets/Google_PLay_Black.svg"
 
 function Footer() {
     return(
