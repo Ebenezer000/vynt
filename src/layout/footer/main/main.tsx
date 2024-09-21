@@ -4,8 +4,8 @@ import vec from "../../../assets/arrow-right-02.svg";
 import vec1 from "../../../assets/call.svg";
 import vec2 from "../../../assets/mail.svg";
 import vec3 from '../../../assets/iPhone_15_Pro_Portrait_Mockup.svg'
-import vec4 from "../../../assets/App_Store_Black.svg"
-import vec5 from "../../../assets/Google_PLay_Black.svg"
+import vec4 from "../../../assets/app_Store_Black.svg"
+import vec5 from "../../../assets/google_Play_Black.svg"
 
 function Footer() {
     return(
