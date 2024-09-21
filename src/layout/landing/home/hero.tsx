@@ -28,7 +28,7 @@ function Hero() {
         <MainContainer>
             <Container>
                 <div>
-                    <h1>Your one stop shop for new and preloved clothes, shoes and accessories</h1>
+                    <h1>Buy and sell new and thrifted clothes, shoes and accessories</h1>
                     <p>Declutter your wardrobe and discover new and preloved pieces at affordable prices.</p>
                     <div className="div_container">
                         <button onClick={scrollToBottom}><span>Join Waitlist</span><img src={vec} alt="" /></button>

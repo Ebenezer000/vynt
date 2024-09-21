@@ -48,6 +48,16 @@ function Faq() {
       answer:
         "Just drop your email in the sign-up box above, and you're all set! You'll be the first to know when we launch.",
     },
+    {
+      question: "What can I sell on Vynt?",
+      answer:
+        "You can sell pre-loved (or even brand new!) clothing, shoes, accessories, and all things fashion. Got a vintage jacket, trendy sneakers, or a quirky hat that needs a new home? \n Vynt's the place to list it! 👗👠🧢",
+    },
+    {
+      question: "Do I have to sell only second-hand stuff?",
+      answer:
+        "Nope! While we're all about sustainability, we also love a good brand-new piece. So if you've got tags-still-on items or clothes you bought but never wore (we've all been there 😅), go ahead and list them. As long as it's fashion-related, you can sell it!",
+    },
   ];
 
   return (
