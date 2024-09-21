@@ -98,6 +98,8 @@ export const Container = styled.div`
         }
     }
     .hero_image{
+        width: 70%;
+        overflow: hidden;
         @media(max-width:600px){
             display:none;
         }
