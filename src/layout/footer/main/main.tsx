@@ -43,6 +43,7 @@ function Footer() {
                     </div>     
                 </div>
                 <div className="footer_left_down_mobile">
+                    <img src={vec3} alt="" />
                     <div className="contacts">
                         <img src={vec1} alt="" />
                         <p>+2349056880570</p>

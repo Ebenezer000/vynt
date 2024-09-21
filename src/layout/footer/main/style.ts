@@ -94,26 +94,30 @@ export const Container = styled.div`
                 height:3vh;
                 border-radius:10px;
                 font-size:20px;
-            }
-            input::placeholder{
-                color:#83939C;
-                font-size:16px;
-            
-            }
-            button{
-                border-radius:10px;
-                border:trasparent;
-                background:#F9B205;
-                cursor:pointer;
-                width:100%;
-                height:6vh;
-                display:flex;
-                justify-content:space-between;
-                align-items:center;
-                gap:10px;
-                margin-top:6%;
-                padding-left:3%;
-                padding-right:3%;
+                outline:none;
+                border:none;
+                }
+                input::placeholder{
+                    color:#83939C;
+                    font-size:16px;
+                    
+                    }
+                    button{
+                        border-radius:10px;
+                        border:trasparent;
+                        background:#F9B205;
+                        cursor:pointer;
+                        width:100%;
+                        height:6vh;
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        gap:10px;
+                        margin-top:6%;
+                        padding-left:3%;
+                        padding-right:3%;
+                        outline:none;
+                        border:none;
 
                 span{
                     font-size:20px;
@@ -147,11 +151,14 @@ export const Container = styled.div`
     }
     .footer_right{
         width:50%;
+        img{
+            height:80%;
+        }
         .stores{
             display:flex;
             gap:30px;
             margin-top:3%;
-            display:none;
+            // display:none;
             @media(max-width:600px){
                 margin-left: 15px;
             }
@@ -174,6 +181,10 @@ export const Container = styled.div`
             // place-content:center;
             display:grid;
             justify-content:center;
+
+            img{
+                margin-bottom:10%;
+            }
 
         }
 

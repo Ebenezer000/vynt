@@ -13,17 +13,20 @@ export const MainContainer = styled.main`
     background-repeat:no-repeat;
     display:flex;
     justify-content:center;
+    background-size:100%;
+    overflow:hidden;
 
     @media(max-width:600px){
         background:url(${vec1}),url(${vec3}),#52014F;
         background-repeat:no-repeat;
+        background-size:100%;
         padding-top: 30px;
         height:auto;
     }
 `
 export const Container = styled.div`
     text-align:center;
-    width:60%;
+    width:50%;
     // border:1px solid #fff;
     padding-top:5%;
     gap:20px;
@@ -98,8 +101,9 @@ export const Container = styled.div`
         }
     }
     .hero_image{
-        width: 70%;
+        width: 90%;
         overflow: hidden;
+        margin-top:6%;
         @media(max-width:600px){
             display:none;
         }
