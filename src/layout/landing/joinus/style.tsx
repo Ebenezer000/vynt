@@ -86,7 +86,7 @@ export const Container = styled.div`
     .joinus_image{
         margin-top:30px;
         margin-bottom:50px;
-        @media(max-width:600px){
+        @media(max-width:900px){
             width:90%;
             // place-content:center;
             display:none;
@@ -94,7 +94,7 @@ export const Container = styled.div`
     }
     .joinus_image_mobile{
         display:none;
-        @media(max-width:600px){
+        @media(max-width:900px){
             width:90%;
             margin-left:auto;
             margin-right:auto;
@@ -105,7 +105,7 @@ export const Container = styled.div`
     }
     .seamless_image{
         transition: opacity 0.5s ease-in-out;
-        @media(max-width:600px){
+        @media(max-width:900px){
         width:90%;
         // place-content:center;
         display:none;
@@ -113,7 +113,7 @@ export const Container = styled.div`
     }
     .seamless_image_mobile{
         display:none;
-        @media(max-width:600px){
+        @media(max-width:900px){
         width:90%;
         margin-left:auto;
         margin-right:auto;

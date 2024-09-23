@@ -152,7 +152,7 @@ export const Container = styled.div`
     .footer_right{
         width:50%;
         img{
-            height:80%;
+            height:80%; 
         }
         .stores{
             display:flex;

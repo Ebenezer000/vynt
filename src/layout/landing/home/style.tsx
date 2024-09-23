@@ -16,7 +16,7 @@ export const MainContainer = styled.main`
     background-size:100%;
     overflow:hidden;
 
-    @media(max-width:600px){
+    @media(max-width:900px){
         background:url(${vec1}),url(${vec3}),#52014F;
         background-repeat:no-repeat;
         background-size:100%;
@@ -29,16 +29,17 @@ export const Container = styled.div`
     width:50%;
     // border:1px solid #fff;
     padding-top:5%;
-    gap:20px;
+    gap:120px;
     display:grid;
     justify-content:center;
     @media(max-width:600px){
-        display:block;
+        display:grid;
         width:70%;  
         justify-content:center;
         text-align:center;
         // border:1px solid red;
         // place-content:center;
+        // gap:300px;
         
     }
     h1{
@@ -82,7 +83,9 @@ export const Container = styled.div`
         justify-content:center;
         padding-top:2%;
         @media(max-width:600px){
-            display:none;
+            // border:1px solid red;
+            // height:auto;
+            // display:none;
         }
     }
     button{
@@ -95,15 +98,23 @@ export const Container = styled.div`
         display:flex;
         justify-content:center;
         align-items:center;
-        margin-bottom: -90px;
+        // margin-bottom: -90px;
+        gap:10px;
+
+        img{
+            padding:0;
+            margin:0;
+        }
         @media(max-width:600px){
-            display:none;
+            // display:none;
+            width:50%;
+            align-items:center;
         }
     }
     .hero_image{
-        width: 90%;
+        width: 100%;
         overflow: hidden;
-        margin-top:6%;
+        // margin-top:6%;
         @media(max-width:600px){
             display:none;
         }
@@ -114,7 +125,7 @@ export const Container = styled.div`
             display:block;
             margin-left:auto;
             margin-right:auto;
-            margin-top: 20px;
+            // margin-top: 20px;
         }
     }
 `

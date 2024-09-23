@@ -54,14 +54,15 @@ export const Container = styled.div`
         line-height:1.5;
     }
     .testimonial_image{
-        @media(max-width:600px){
+        height:90%;
+        @media(max-width:900px){
         width:90%;
         display:none;
         }
     }
     .testimonial_image_mobile{
         display:none;
-        @media(max-width:600px){
+        @media(max-width:900px){
             width:90%;
             margin-top: 10px;
             margin-bottom: 40px;
