@@ -50,6 +50,7 @@ export const Container = styled.div`
             margin-bottom: 10px;
         }
     }
+        
     h3{
         color:#FC811C;
         font-size: 1.1rem;
