@@ -192,6 +192,11 @@ export const Container = styled.div`
             display:flex;
             gap:12px;
             align-items:center;
+
+            img{
+                padding:0;
+                margin:0;
+            }
             
             p{  
                 font-size:14px;
