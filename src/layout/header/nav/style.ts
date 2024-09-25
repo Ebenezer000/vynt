@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import vec3 from "../../../assets/Pattern_web.svg";
+import vec1 from "../../../assets/Pattern.svg";
 
 
 export const MainContainer = styled.main`
     height:auto;
-    background:url(${vec3})#52014F;
+    background:url(${vec1})#52014F;
     padding:2%;
     
     @media(max-width:600px){
+        background:url(${vec3})#52014F;
         width:auto;
         padding-right:5%;
         padding-top:5%;
