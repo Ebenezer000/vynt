@@ -115,12 +115,19 @@ export const Container = styled.div`
         }
     }
     .mobile_hero_image{
-        display:none;
-        @media(max-width:600px){
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
-            margin-top: 20px;
+        display: none;
+
+        @media(max-width: 600px) {
+            display: block;
+            width: 100%;
+            height: 70%;
+            img {
+                width: 100%;
+                height: 70%;
+                margin-top: -5%;
+                margin-bottom: -70%;
+                object-fit: cover; /* Ensures the image covers the container */
+            }
         }
-    }
+}
 `

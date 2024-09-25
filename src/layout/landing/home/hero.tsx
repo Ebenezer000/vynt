@@ -2,10 +2,10 @@ import React, { useEffect } from "react"
 import { Container, MainContainer } from "./style"
 import vec from '../../../assets/Vector.svg'
 import vec1 from "../../../assets/iPhone_14_Pro_Space_Black_Mockup.svg";
-import vec2 from "../../../assets/mobile.svg";
+// import vec2 from "../../../assets/mobile.svg";
+import vec2 from "../../../assets/Mobile.png";
 import Aos from "aos"
 import "aos/dist/aos.css";
-import Navbar from "../../header/nav/main";
 
 function Hero() {
     useEffect(() => {
@@ -37,7 +37,9 @@ function Hero() {
                 </div>
                 <div >
                     <img className="hero_image" src={vec1} alt="" />
-                    <img className="mobile_hero_image" src={vec2} alt="" />
+                    <div className="mobile_hero_image">
+                        <img src={vec2} alt="" />
+                    </div>
                 </div>
             </Container>
         </MainContainer>
