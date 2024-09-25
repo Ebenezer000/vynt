@@ -3,12 +3,10 @@ import vec from '../../../assets/Group_24.svg'
 import vec1 from '../../../assets/Frame_203.svg'
 import vec3 from "../../../assets/Pattern.svg";
 
-
-
 export const MainContainer = styled.main`
     width:100%;
     height:140vh;
-    background:url(${vec3}),url(${vec}),#52014F;
+    background:url(${vec}),url(${vec3}),#52014F;
     // background-image:url;
     background-repeat:no-repeat;
     display:flex;
