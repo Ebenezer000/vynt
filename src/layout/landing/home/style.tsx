@@ -26,20 +26,19 @@ export const MainContainer = styled.main`
 `
 export const Container = styled.div`
     text-align:center;
-    width:50%;
+    width:60%;
     // border:1px solid #fff;
     padding-top:5%;
-    gap:120px;
+    gap:20px;
     display:grid;
     justify-content:center;
     @media(max-width:600px){
-        display:grid;
+        display:block;
         width:70%;  
         justify-content:center;
         text-align:center;
         // border:1px solid red;
         // place-content:center;
-        // gap:300px;
         
     }
     h1{
@@ -83,9 +82,7 @@ export const Container = styled.div`
         justify-content:center;
         padding-top:2%;
         @media(max-width:600px){
-            // border:1px solid red;
-            // height:auto;
-            // display:none;
+            display:none;
         }
     }
     button{
@@ -125,7 +122,7 @@ export const Container = styled.div`
             display:block;
             margin-left:auto;
             margin-right:auto;
-            // margin-top: 20px;
+            margin-top: 20px;
         }
     }
 `
