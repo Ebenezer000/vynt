@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { Container, MainContainer } from "./style"
 import vec from '../../../assets/Vector.svg'
 import vec1 from "../../../assets/iPhone_14_Pro_Space_Black_Mockup.svg";
-import vec2 from "../../../assets/mobilephone.svg";
+import vec2 from "../../../assets/mobile.svg";
 import Aos from "aos"
 import "aos/dist/aos.css";
 
