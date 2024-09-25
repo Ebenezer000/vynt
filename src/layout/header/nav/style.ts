@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import vec3 from "../../../assets/Pattern.svg";
+import vec3 from "../../../assets/Pattern_web.svg";
 
 
 export const MainContainer = styled.main`
