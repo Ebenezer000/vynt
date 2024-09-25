@@ -103,6 +103,8 @@ export const Container = styled.div`
     p {
       color: #4b5563;
       font-size: 1rem;
+      font-family: Helvetica Neue;
+      font-weight: 400;
       line-height: 1.5;
       text-align: left;  // Aligns the answer text to the left
 

@@ -8,6 +8,7 @@ export const MainContainer = styled.main`
     padding:2%;
     
     @media(max-width:600px){
+        width:auto;
         padding-right:5%;
         padding-top:5%;
     }
