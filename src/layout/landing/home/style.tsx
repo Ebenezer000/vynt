@@ -5,7 +5,7 @@ import vec3 from "../../../assets/Pattern.svg";
 
 export const MainContainer = styled.main`
     width:100%;
-    height:100vh;
+    height:140vh;
     background:url(${vec}),url(${vec3}),#52014F;
     // background-image:url;
     background-repeat:no-repeat;
